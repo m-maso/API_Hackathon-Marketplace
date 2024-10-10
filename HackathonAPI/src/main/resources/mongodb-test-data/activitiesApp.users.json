@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67081bb0ffbd9d1e43cc96ed"
+  },
+  "firstName": "Mary",
+  "lastName": "Ann",
+  "email": "maryann@mail.com",
+  "userActivities": [
+    {
+      "activityName": "Photography Course",
+      "description": "Learn landscape photography",
+      "maxCapacity": 15
+    }
+  ],
+  "_class": "com.activitiesApp.domain.entity.User"
+},
+{
+  "_id": {
+    "$oid": "67081c71ffbd9d1e43cc96ee"
+  },
+  "firstName": "John",
+  "lastName": "Wick",
+  "email": "john@mail.com",
+  "userActivities": [],
+  "_class": "com.activitiesApp.domain.entity.User"
+},
+{
+  "_id": {
+    "$oid": "67081ce9ffbd9d1e43cc96f0"
+  },
+  "firstName": "Mary",
+  "lastName": "Black",
+  "email": "maryblack@mail.com",
+  "userActivities": [],
+  "_class": "com.activitiesApp.domain.entity.User"
+}]

@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67081db5ffbd9d1e43cc96f1"
+  },
+  "activityName": "Photography Course",
+  "description": "Learn landscape photography",
+  "maxCapacity": 15,
+  "registeredUsersInActivity": [
+    {
+      "firstName": "Mary",
+      "lastName": "Ann",
+      "email": "maryann@mail.com"
+    }
+  ],
+  "_class": "com.activitiesApp.domain.entity.Activity"
+},
+{
+  "_id": {
+    "$oid": "67081e28ffbd9d1e43cc96f3"
+  },
+  "activityName": "Curs de fotografia",
+  "description": "Aprendre fotografia de paisatges.",
+  "maxCapacity": 15,
+  "registeredUsersInActivity": [],
+  "_class": "com.activitiesApp.domain.entity.Activity"
+},
+{
+  "_id": {
+    "$oid": "67081e62ffbd9d1e43cc96f4"
+  },
+  "activityName": "Sessió de Ioga",
+  "description": "Classe de ioga per relaxar-se i estirar els músculs.",
+  "maxCapacity": 20,
+  "registeredUsersInActivity": [],
+  "_class": "com.activitiesApp.domain.entity.Activity"
+}]

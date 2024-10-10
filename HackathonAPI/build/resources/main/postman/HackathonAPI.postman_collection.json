@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "2504bdd5-c89d-4275-9350-8dee1e0f4109",
+		"name": "HackathonAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32113020"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "/user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Mary\",\r\n  \"lastName\": \"Black\",\r\n  \"email\": \"maryblack@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}:{{port}}{{appV1}}/user"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Mary\",\r\n  \"lastName\": \"Ann\",\r\n  \"email\": \"maryann@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}:{{port}}{{appV1}}/users/67081bb0ffbd9d1e43cc96ed"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/users/67081c90ffbd9d1e43cc96ef"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/users/67081c71ffbd9d1e43cc96ee"
+					},
+					"response": []
+				},
+				{
+					"name": "/allUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/allUsers"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/{id}/activities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/users/67081bb0ffbd9d1e43cc96ed/activities"
+					},
+					"response": []
+				}
+			],
+			"description": "Users has 6 endpoints:\n\n- Create a new user  \n    POST [http://localhost:8080/activitiesApp/v1/user](http://localhost:8080/activitiesApp/v1/user)\n    \n- Update a user personal information (only First name, Last name and Email fields)  \n    PUT [http://localhost:8080/activitiesApp/v1/users/{id}](http://localhost:8080/activitiesApp/v1/users/{id})\n    \n- Delete a user  \n    DELETE [http://localhost:8080/activitiesApp/v1/users/{id}](http://localhost:8080/activitiesApp/v1/users/{id})\n    \n- Get one user's information  \n    GET [http://localhost:8080/activitiesApp/v1/users/{id}](http://localhost:8080/activitiesApp/v1/users/{id})\n    \n- Show all users  \n    GET [http://localhost:8080/activitiesApp/v1/allUsers](http://localhost:8080/activitiesApp/v1/allUsers)\n    \n- Show all activities for one user  \n    GET [http://localhost:8080/activitiesApp/v1/users/{id}/activities](http://localhost:8080/activitiesApp/v1/users/{id}/activities)"
+		},
+		{
+			"name": "Activities",
+			"item": [
+				{
+					"name": "/activity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"activityName\": \"Curs de fotografia\",\r\n  \"description\": \"Aprendre fotografia de paisatges.\",\r\n  \"maxCapacity\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}:{{port}}{{appV1}}/activity"
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"activityName\": \"Photography Course\",\r\n  \"description\": \"Learn landscape photography\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}:{{port}}{{appV1}}/activities/67081db5ffbd9d1e43cc96f1"
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/activities/67081e0cffbd9d1e43cc96f2"
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/activities/67081e62ffbd9d1e43cc96f4"
+					},
+					"response": []
+				},
+				{
+					"name": "/allActivities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/allActivities"
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/{id}/user/{userId}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/activities/67081db5ffbd9d1e43cc96f1/user/67081bb0ffbd9d1e43cc96ed"
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/{id}/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/activities/67081db5ffbd9d1e43cc96f1/users"
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/importfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "src/main/resources/json/Activities.json",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": "{{server}}:{{port}}{{appV1}}/activities/importfile"
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/export",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}:{{port}}{{appV1}}/activities/export"
+					},
+					"response": []
+				}
+			],
+			"description": "Activities has 9 endpoints:\n\n- Create a new activity  \n    POST [http://localhost:8080/activitiesApp/v1/activity](http://localhost:8080/activitiesApp/v1/activity)\n    \n- Update an activity information (only Activity name and Description fields)  \n    PUT [http://localhost:8080/activitiesApp/v1/activities/{id}](http://localhost:8080/activitiesApp/v1/activities/{id})\n    \n- Delete an activity  \n    DELETE [http://localhost:8080/activitiesApp/v1/activities/{id}](http://localhost:8080/activitiesApp/v1/activities/{id})\n    \n- Get one activity  \n    GET [http://localhost:8080/activitiesApp/v1/activities/{id}](http://localhost:8080/activitiesApp/v1/activities/{id})\n    \n- Show all activities  \n    GET [http://localhost:8080/activitiesApp/v1/allActivities](http://localhost:8080/activitiesApp/v1/allActivities)\n    \n- Register a user into an activity  \n    POST [http://localhost:8080/activitiesApp/v1/activities/{id}/user/{userId}](http://localhost:8080/activitiesApp/v1/activities/{id}/user/{userId})\n    \n- Show all users for one activity  \n    GET [http://localhost:8080/activitiesApp/v1/activities/{id}/users](http://localhost:8080/activitiesApp/v1/activities/{id}/users)\n    \n- Import activities from Json File  \n    POST [http://localhost:8080/activitiesApp/v1/activities/importfile](http://localhost:8080/activitiesApp/v1/activities/importfile)\n    \n- Export activities  \n    GET [http://localhost:8080/activitiesApp/v1/activities/export](http://localhost:8080/activitiesApp/v1/activities/export)"
+		}
+	]
+}

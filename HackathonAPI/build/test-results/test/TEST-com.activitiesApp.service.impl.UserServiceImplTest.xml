@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.activitiesApp.service.impl.UserServiceImplTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-10-10T19:52:05" hostname="LAPTOP-T6K8FIRD" time="0.866">
+  <properties/>
+  <testcase name="getAllUsers()" classname="com.activitiesApp.service.impl.UserServiceImplTest" time="0.866">
+    <failure message="org.mockito.exceptions.base.MockitoException: &#10;Cannot call abstract real method on java object!&#10;Calling real methods is only possible when mocking non abstract method.&#10;  //correct example:&#10;  when(mockOfConcreteClass.nonAbstractMethod()).thenCallRealMethod();" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
+Cannot call abstract real method on java object!
+Calling real methods is only possible when mocking non abstract method.
+  //correct example:
+  when(mockOfConcreteClass.nonAbstractMethod()).thenCallRealMethod();
+	at app//com.activitiesApp.service.impl.UserServiceImplTest.getAllUsers(UserServiceImplTest.java:76)
+	at java.base@21.0.3/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.3/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.3/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\monma\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
